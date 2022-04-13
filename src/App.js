@@ -2,6 +2,7 @@ import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { cyan, teal } from "@mui/material/colors";
 import Footer from "./components/Footer";
+import SocialLinks from "./components/SocialLinks/index";
 
 import "normalize.css";
 import "./app.css";
@@ -24,6 +25,7 @@ function App() {
   return (
     <main>
       <ThemeProvider theme={theme}>
+        <SocialLinks />
         <Footer
           name="Elmira"
           onThemeClick={handleThemeClick}
