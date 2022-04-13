@@ -26,6 +26,7 @@ function App() {
     <main>
       <ThemeProvider theme={theme}>
         <SocialLinks />
+        <ProfileImage />
         <Footer
           name="Elmira"
           onThemeClick={handleThemeClick}
