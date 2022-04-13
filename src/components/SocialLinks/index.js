@@ -10,15 +10,21 @@ import "./socialLinks.css";
 function SocialLinks() {
   return (
     <div className="icons_wrapper">
-      <IconButton color="primary">
-        <LinkedInIcon />
-      </IconButton>
-      <IconButton color="primary">
-        <InstagramIcon />
-      </IconButton>
-      <IconButton color="primary">
-        <GitHubIcon />
-      </IconButton>
+      <a href="https://www.linkedin.com/in/elmirakamaldar" target="_blank">
+        <IconButton color="primary">
+          <LinkedInIcon />
+        </IconButton>
+      </a>
+      <a href="https://www.instagram.com/developer.bay" target="_blank">
+        <IconButton color="primary">
+          <InstagramIcon />
+        </IconButton>
+      </a>
+      <a href="https://github.com/smkamaldar" target="_blank">
+        <IconButton color="primary">
+          <GitHubIcon />
+        </IconButton>
+      </a>
     </div>
   );
 }

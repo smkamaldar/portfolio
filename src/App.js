@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { cyan, purple } from "@mui/material/colors";
 import Footer from "./components/Footer";
 import SocialLinks from "./components/SocialLinks/index";
+import ProfileImage from "./components/ProfileImage";
 
 import "normalize.css";
 import "./app.css";
@@ -10,7 +11,7 @@ import "./app.css";
 const theme = createTheme({
   palette: {
     primary: {
-      main: purple[500],
+      main: cyan[500],
     },
     secondary: {
       main: purple[900],
