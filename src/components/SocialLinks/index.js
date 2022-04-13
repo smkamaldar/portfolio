@@ -10,13 +10,13 @@ import "./socialLinks.css";
 function SocialLinks() {
   return (
     <div className="icons_wrapper">
-      <IconButton>
+      <IconButton color="primary">
         <LinkedInIcon />
       </IconButton>
-      <IconButton>
+      <IconButton color="primary">
         <InstagramIcon />
       </IconButton>
-      <IconButton>
+      <IconButton color="primary">
         <GitHubIcon />
       </IconButton>
     </div>

@@ -12,10 +12,10 @@ function Footer(props) {
     <footer>
       <p>{name}</p>
       <div>
-        <IconButton onClick={onThemeClick}>
+        <IconButton color="secondary" onClick={onThemeClick}>
           <DarkModeOutlinedIcon />
         </IconButton>
-        <IconButton color="primary" onClick={onMenuClick}>
+        <IconButton color="secondary" onClick={onMenuClick}>
           <WidgetsOutlinedIcon />
         </IconButton>
       </div>
