@@ -4,11 +4,13 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  width: 97vw;
+  width: 100vw;
   height: 10vh;
-  padding: 0 10px;
+  border-top: 1px solid gray;
+  border-radius: 10px;
 
   p {
+    padding-left: 10px;
     color: var(--font-color-primary);
   }
 }

@@ -18,7 +18,7 @@ const navigationLinks = [
 function Menu(props) {
   const { open, onClose } = props;
   return (
-    <div>
+    <div className="drawer">
       <SwipeableDrawer anchor="bottom" open={open} onClose={onClose}>
         <div className="drawer__content">
           {navigationLinks.map((item) => (

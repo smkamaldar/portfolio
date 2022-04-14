@@ -1,21 +1,22 @@
-.drawer__content{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    
-}
-
-.drawer__link{
-    display: flex;
-    justify-content: center;
-    flex-basis: 33%;
-    padding-bottom: 20px;
-    button{
+.drawer{
+    &__content{
         display: flex;
-        flex-direction: column;
-        font-size: 14px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        flex-basis: 33%;
+        padding-bottom: 20px;
+        button{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
     }
 }
+
+
