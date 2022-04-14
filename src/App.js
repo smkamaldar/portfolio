@@ -1,20 +1,20 @@
 import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { cyan, purple } from "@mui/material/colors";
+import { cyan, deepPurple, grey } from "@mui/material/colors";
+
+import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
-import SocialLinks from "./components/SocialLinks/index";
-import ProfileImage from "./components/ProfileImage";
 
 import "normalize.css";
-import "./app.css";
+import "./app.scss";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: cyan[500],
+      main: deepPurple[500],
     },
     secondary: {
-      main: purple[900],
+      main: grey[900],
     },
   },
 });
@@ -26,8 +26,7 @@ function App() {
   return (
     <main>
       <ThemeProvider theme={theme}>
-        <SocialLinks />
-        <ProfileImage />
+        <Hero />
         <Footer
           name="Elmira"
           onThemeClick={handleThemeClick}

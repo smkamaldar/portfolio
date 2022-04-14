@@ -1,0 +1,13 @@
+.hero {
+    height: 80vh;
+    padding-top: 80px;
+
+    &__image {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact{
+        margin-top: 30px;
+    }
+}
