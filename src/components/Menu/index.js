@@ -10,10 +10,10 @@ import IconButton from "@mui/material/IconButton";
 import "./menu.scss";
 
 const navigationLinks = [
-  { name: "Home", link: "", icon: <HomeOutlinedIcon /> },
-  { name: "About", link: "", icon: <PersonOutlineOutlinedIcon /> },
-  { name: "Skills", link: "", icon: <FeedOutlinedIcon /> },
-  { name: "Contact Me", link: "", icon: <SendOutlinedIcon /> },
+  { id: "#hero", name: "Home", icon: <HomeOutlinedIcon /> },
+  { id: "#about", name: "About", icon: <PersonOutlineOutlinedIcon /> },
+  { id: "#skills", name: "Skills", icon: <FeedOutlinedIcon /> },
+  { id: "#contact", name: "Contact Me", icon: <SendOutlinedIcon /> },
 ];
 function Menu(props) {
   const { open, onClose } = props;
@@ -22,12 +22,12 @@ function Menu(props) {
       <SwipeableDrawer anchor="bottom" open={open} onClose={onClose}>
         <div className="drawer__content">
           {navigationLinks.map((item) => (
-            <div className="drawer__link">
+            <a className="drawer__link" href={item.id} onClick={onClose}>
               <IconButton>
                 {item.icon}
                 {item.name}
               </IconButton>
-            </div>
+            </a>
           ))}
         </div>
       </SwipeableDrawer>
