@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 97vw;
+  height: 10vh;
+  padding: 0 10px;
+
+  p {
+    color: var(--font-color-primary);
+  }
+}

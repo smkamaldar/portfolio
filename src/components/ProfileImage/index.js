@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 
-import "./profileImage.css";
+import "./profileImage.scss";
 function ProfileImage() {
   const theme = useTheme();
   const primaryColor = theme.palette.primary.main;
