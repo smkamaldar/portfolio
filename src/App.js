@@ -4,6 +4,7 @@ import { cyan, deepPurple, grey } from "@mui/material/colors";
 
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
 
 import "normalize.css";
 import "./app.scss";
@@ -27,6 +28,7 @@ function App() {
     <main>
       <ThemeProvider theme={theme}>
         <Hero />
+        <Menu />
         <Footer
           name="Elmira"
           onThemeClick={handleThemeClick}
