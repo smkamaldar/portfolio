@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useState } from "react";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { cyan, deepPurple, grey } from "@mui/material/colors";
 
@@ -20,19 +22,20 @@ const theme = createTheme({
   },
 });
 
-const handleThemeClick = () => {};
-const handleMenuClick = () => {};
-
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const handleThemeClick = () => {};
+
   return (
     <main>
       <ThemeProvider theme={theme}>
         <Hero />
-        <Menu />
+        <Menu open={open} onClose={() => setOpen(false)} />
         <Footer
           name="Elmira"
           onThemeClick={handleThemeClick}
-          onMenuClick={handleMenuClick}
+          onMenuClick={() => setOpen(true)}
         />
       </ThemeProvider>
     </main>

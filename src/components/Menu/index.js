@@ -15,10 +15,11 @@ const navigationLinks = [
   { name: "Skills", link: "", icon: <FeedOutlinedIcon /> },
   { name: "Contact Me", link: "", icon: <SendOutlinedIcon /> },
 ];
-function Menu() {
+function Menu(props) {
+  const { open, onClose } = props;
   return (
     <div>
-      <SwipeableDrawer anchor="bottom" open={true}>
+      <SwipeableDrawer anchor="bottom" open={open} onClose={onClose}>
         <div className="drawer__content">
           {navigationLinks.map((item) => (
             <div className="drawer__link">
