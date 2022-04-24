@@ -2,7 +2,6 @@ import React from "react";
 
 import Button from "@mui/material/Button";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
-import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
 
 import Experience from "../../components/Experience";
 import "./about.scss";
@@ -23,9 +22,9 @@ function About() {
         </p>
       </div>
       <div className="about__exp">
-        <Experience caption="Years experience" isYear={true} />
-        <Experience count="10" caption="Completed projects" isYear={false} />
-        <Experience count="5" caption="Companies worked" isYear={false} />
+        <Experience caption="Years experience" isYear />
+        <Experience count="10" caption="Completed projects" />
+        <Experience count="5" caption="Companies worked" />
       </div>
       <div className="about__button">
         <Button variant="contained" endIcon={<FileDownloadOutlinedIcon />}>
@@ -33,9 +32,6 @@ function About() {
             Download CV
           </a>
         </Button>
-        <a className="" href="#hero">
-          <ArrowUpwardRoundedIcon />
-        </a>
       </div>
     </section>
   );
