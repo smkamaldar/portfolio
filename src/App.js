@@ -8,6 +8,7 @@ import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
 
 import "normalize.css";
 import "./app.scss";
@@ -29,18 +30,19 @@ function App() {
   const handleThemeClick = () => {};
 
   return (
-    <main>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <main style={{ height: "90vh", overflowY: "scroll" }}>
         <Hero />
         <About />
+        <Skills />
         <Menu open={open} onClose={() => setOpen(false)} />
-        <Footer
-          name="Elmira"
-          onThemeClick={handleThemeClick}
-          onMenuClick={() => setOpen(true)}
-        />
-      </ThemeProvider>
-    </main>
+      </main>
+      <Footer
+        name="Elmira"
+        onThemeClick={handleThemeClick}
+        onMenuClick={() => setOpen(true)}
+      />
+    </ThemeProvider>
   );
 }
 
