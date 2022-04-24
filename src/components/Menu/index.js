@@ -1,6 +1,5 @@
 import React from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Link from "@mui/material/Link";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
@@ -19,10 +18,20 @@ function Menu(props) {
   const { open, onClose } = props;
   return (
     <div className="drawer">
-      <SwipeableDrawer anchor="bottom" open={open} onClose={onClose}>
+      <SwipeableDrawer
+        anchor="bottom"
+        open={open}
+        onClose={onClose}
+        onOpen={() => {}}
+      >
         <div className="drawer__content">
           {navigationLinks.map((item) => (
-            <a className="drawer__link" href={item.id} onClick={onClose}>
+            <a
+              key={item.id}
+              className="drawer__link"
+              href={item.id}
+              onClick={onClose}
+            >
               <IconButton>
                 {item.icon}
                 {item.name}
