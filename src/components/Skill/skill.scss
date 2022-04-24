@@ -1,0 +1,17 @@
+
+.skill{
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        p{
+            margin:0
+        }
+    }
+    .MuiSlider-root{
+        pointer-events: none;
+        .MuiSlider-thumb{
+            display: none;
+        }
+    }
+    
+}
