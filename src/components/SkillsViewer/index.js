@@ -10,7 +10,7 @@ import Skill from "../Skill";
 
 function SkillsViewer({ title, desc, icon, skills, expanded, onChange }) {
   return (
-    <div>
+    <div className="skill-viewer">
       <Accordion
         expanded={expanded === title}
         onChange={() => onChange(expanded === title ? null : title)}

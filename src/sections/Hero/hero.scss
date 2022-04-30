@@ -1,12 +1,42 @@
 .hero {
     padding-top: 80px;
-
+    .item-a {
+        grid-area: social;
+      }
+      .item-b {
+        grid-area: logo;
+      }
+      .item-c {
+        grid-area: detail;
+      }
+    
     &__image {
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "social logo"
+        "detail detail"
     }
 
     &__contact{
         margin-top: 30px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &__image{
+            display: grid;
+            grid-template-columns: .2fr 1fr 1fr;
+            grid-template-areas: 
+            "social detail logo";
+            justify-items: center;
+            align-items: center;
+        }
+    }
+  }

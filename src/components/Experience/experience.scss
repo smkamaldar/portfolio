@@ -1,11 +1,9 @@
 
-.container{
+.experience{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.container p{
-    margin-top: -15px;
-    width:50px;
-    text-align: center;
+    h6:first-child{
+        font-weight: bold;
+    }
+    
 }

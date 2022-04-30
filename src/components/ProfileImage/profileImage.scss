@@ -9,3 +9,16 @@
 .profile-image__blob-img {
   width: 170px;
 }
+
+@media screen and (min-width: 768px) {
+  .profile-image__blob {
+    width: 300px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .profile-image__blob {
+    width: 400px;
+  }
+}

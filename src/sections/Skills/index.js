@@ -1,18 +1,24 @@
 import React, { useState } from "react";
-import SkillsViewer from "../../components/SkillsViewer";
 
+import { useTheme } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
 import DnsIcon from "@mui/icons-material/Dns";
 import DataObjectIcon from "@mui/icons-material/DataObject";
 import StorageIcon from "@mui/icons-material/Storage";
+
+import SkillsViewer from "../../components/SkillsViewer";
 import "./skills.scss";
 
 function Skills() {
+  const theme = useTheme();
+  const backgroundColor = theme.palette.background.default;
+
   const [expanded, setExpanded] = useState(null);
   return (
-    <section id="skills">
+    <section id="skills" style={{ backgroundColor }}>
       <div className="skills__title">
-        <h1>Skills</h1>
-        <p>My technical level</p>
+        <Typography variant="h4">Skills</Typography>
+        <Typography variant="subtitle1">My technical level</Typography>
       </div>
       <div className="skills__wrapper">
         <SkillsViewer

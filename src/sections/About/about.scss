@@ -24,11 +24,21 @@
     &__button{
         text-align: center;
         margin-top: 40px;
-        a{
-            float: right;       
-         }
     }
 }
 .about__title p{
     margin-top: -20px;
+}
+
+@media screen and (min-width: 768px) {
+    .about{
+        &__intro{
+            margin: 40px;
+        }
+        &__image{
+            width: 400px;
+            margin-bottom: 20px;
+            
+        }
+    }
 }

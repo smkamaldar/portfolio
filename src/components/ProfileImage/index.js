@@ -5,6 +5,7 @@ import "./profileImage.scss";
 function ProfileImage() {
   const theme = useTheme();
   const primaryColor = theme.palette.primary.main;
+
   return (
     <div className="profile-image">
       <svg

@@ -11,7 +11,7 @@ section {
   height: 100%;
 }
 
-button {
+.MuiButton-root {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   border-radius: 8px !important;
@@ -22,7 +22,49 @@ a{
   text-decoration: none;
 }
 
+.upArrow{   
+  position: fixed;
+  bottom:  15vh;
+  right: 20px;
+  z-index: 100;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  svg{
+    position: relative;
+    left: 1px;
+  }
+
+}
+
 .MuiDrawer-paper{
   border-top-left-radius:  20px;
   border-top-right-radius:  20px;
+}
+
+@media screen and (min-width: 768px) {
+  body{
+    overflow: scroll;
+  }
+  // main{
+  //   // height: 90vh !important;
+  //   // overflow: none !important;
+    
+  // }
+  h4{
+    font-size: 3rem !important;
+  }
+
+  h6{
+    font-size: 1.09rem !important;
+  }
+
+  .MuiButton-root{
+    font-size: 1.1rem !important;
+  }
+
+  // Footer{
+  //   display: none;
+  // }
 }

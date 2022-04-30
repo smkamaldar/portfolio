@@ -12,7 +12,7 @@ const navigationLinks = [
   { id: "#hero", name: "Home", icon: <HomeOutlinedIcon /> },
   { id: "#about", name: "About", icon: <PersonOutlineOutlinedIcon /> },
   { id: "#skills", name: "Skills", icon: <FeedOutlinedIcon /> },
-  { id: "#contact", name: "Contact Me", icon: <SendOutlinedIcon /> },
+  // { id: "#contact", name: "Contact Me", icon: <SendOutlinedIcon /> },
 ];
 function Menu(props) {
   const { open, onClose } = props;
