@@ -1,23 +1,28 @@
-.skill-viewer{
-
-    .accordion__wrapper{
-        display: flex;
-        p{
-            margin-top: -5px;
-        }
-        h3{
-            margin-bottom: 5px;
-        }
+.skill-viewer {
+  .accordion {
+    &__wrapper {
+      display: flex;
+      align-items: baseline;
+      p {
+        margin-top: -5px;
+      }
+      h3 {
+        margin-bottom: 5px;
+      }
     }
-    .MuiAccordionSummary-content{
-        margin: 5px 0;
+    &__icon {
+      position: relative;
+      bottom: 4px;
     }
+  }
+  .MuiAccordionSummary-content {
+    margin: 5px 0;
+  }
 }
 
-
 @media screen and (min-width: 768px) {
-    .skill-viewer{
-        flex: 1 40%;
-        max-width: 50%;
-    }
+  .skill-viewer {
+    flex: 1 40%;
+    max-width: 50%;
+  }
 }

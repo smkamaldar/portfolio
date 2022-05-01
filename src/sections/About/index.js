@@ -21,9 +21,9 @@ function About() {
       <div className="about__intro">
         <img className="about__image" src="/images/1.jpg" />
         <Typography variant="subtitle1">
-          web developer, with extensive knowledge and years of
-          experience,working in web technologies and ui/ux design, delivering
-          quality work
+          My previous experience makes me an effective team member and team
+          leader who communicates well and can easily adapt to new situations
+          and conditions. I am eager to learn and grow with new opportunities.
         </Typography>
       </div>
       <div className="about__exp">
