@@ -19,7 +19,7 @@ function About() {
         <Typography variant="subtitle1">My introduction</Typography>
       </div>
       <div className="about__intro">
-        <img className="about__image" src="/images/about.jpg" />
+        <img className="about__image" src="/images/1.jpg" />
         <Typography variant="subtitle1">
           web developer, with extensive knowledge and years of
           experience,working in web technologies and ui/ux design, delivering
@@ -29,7 +29,7 @@ function About() {
       <div className="about__exp">
         <Experience caption="Years experience" isYear />
         <Experience count="10" caption="Completed projects" />
-        <Experience count="5" caption="Companies worked" />
+        <Experience count="1" caption="Companies worked" />
       </div>
       <div className="about__button">
         <Button

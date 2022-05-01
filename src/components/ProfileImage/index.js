@@ -31,9 +31,9 @@ function ProfileImage() {
           />
           <image
             className="profile-image__blob-img"
-            x="12"
-            y="18"
-            href="/images/profile.png"
+            x="-10"
+            y="-10"
+            href="/images/pic.png"
           />
         </g>
       </svg>

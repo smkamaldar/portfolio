@@ -26,8 +26,8 @@ function Hero() {
           <Typography variant="h4">Hey, I am Elmira</Typography>
           <Typography variant="subtitle1">Full Stack Web Developer</Typography>
           <Typography variant="subtitle1">
-            High level experience in web design and development knowledge,
-            producing quality work.
+            I focus on producing high quality software solutions that are easy
+            to read, understand and maintain.
           </Typography>
           <div className="hero__contact">
             <Button variant="contained" endIcon={<SendIcon />} href="#about">
